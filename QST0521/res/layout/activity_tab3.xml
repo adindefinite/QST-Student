@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tab3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/student"
+    tools:context="${relativePackage}.${activityClass}" >
+
+     <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/c2_course_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+       <!--  <EditText
+            android:id="@+id/c2_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp" >
+             <requestFocus />
+            </EditText> -->
+            
+        <Button 
+            android:id="@+id/tab3_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            android:background="@drawable/button_bg"
+            />
+    </LinearLayout>
+    
+     <TextView 
+        android:id="@+id/show_score_info"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:text="分数分布情况"
+        android:background="@color/powderblue"
+        android:layout_below="@id/linearLayout5"
+        />
+    
+     <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/show_score_info"
+        android:orientation="vertical"
+        android:divider="@drawable/divider"
+        android:showDividers="beginning|middle|end" >
+      </TableLayout>
+    
+      <TextView 
+        android:id="@+id/show_top_info"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:text="最好的五名学生情况"
+        android:background="@color/powderblue"
+        android:layout_below="@id/tableLayout1"
+        />
+      
+      <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/show_top_info"
+        android:orientation="vertical"
+        android:divider="@drawable/divider"
+        android:showDividers="beginning|middle|end" >
+      </TableLayout>
+      
+      <TextView 
+        android:id="@+id/show_low_info"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:text="最差的五名学生情况"
+        android:background="@color/powderblue"
+        android:layout_below="@id/tableLayout2"
+        />
+      
+      <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/show_low_info"
+        android:orientation="vertical"
+        android:divider="@drawable/divider"
+        android:showDividers="beginning|middle|end" >
+      </TableLayout>
+    
+     <TextView 
+        android:id="@+id/show_fail_info"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:text="考试不及格的学生"
+        android:background="@color/powderblue"
+        android:layout_below="@id/tableLayout3"
+        />
+     
+     <TableLayout
+        android:id="@+id/tableLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/show_fail_info"
+        android:orientation="vertical"
+        android:divider="@drawable/divider"
+        android:showDividers="beginning|middle|end" >
+      </TableLayout>
+
+</RelativeLayout>

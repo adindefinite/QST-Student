@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">学生成绩管理系统</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="welcome">欢迎进入学生成绩管理系统</string>
+    <string name="account">账号：</string>
+    <string name="password">密码：</string>
+    <string name="accounthint">请输入学号</string>
+    <string name="passwordhint">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="cancel">取消</string>
+    <string name="a">登录即代表阅读并同意服务条例</string>
+    <string name="b">没有账号？点击注册</string>
+    <string name="course">课程：</string>
+    <string name="name">姓名：</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_tab1">Tab1Activity</string>
+    <string name="title_activity_tab2">Tab2Activity</string>
+    <string name="title_activity_tab3">Tab3Activity</string>
+    <string name="title_activity_tab4">Tab4Activity</string>
+    <string name="title_activity_forget_pwd">ForgetPwdActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_add_info">AddInfoActivity</string>
+    <string name="title_activity_change_info">ChangeInfoActivity</string>
+    <string name="title_activity_change_pwd">ChangePwdActivity</string>
+
+</resources>

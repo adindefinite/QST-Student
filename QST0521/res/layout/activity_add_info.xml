@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/add_line1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/add_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学号：   "
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+        
+        <TextView
+            android:id="@+id/add_no_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请输入学号"
+            android:textSize="20sp"
+            android:textColor="#C4C4C4"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/add_line1">
+
+        <TextView
+            android:id="@+id/add_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名："
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/add_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入姓名"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/add_line2">
+
+        <TextView
+            android:id="@+id/add_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="班级："
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/add_grade_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入班级"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/add_line4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/add_line3">
+
+        <TextView
+            android:id="@+id/add_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="性别："
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+        <RadioGroup
+        android:id="@+id/radio_sex"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男           "/>
+
+        <RadioButton
+            android:id="@+id/radio_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="女"/>
+
+    </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_line5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/add_line4">
+
+        <TextView
+            android:id="@+id/add_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式："
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/add_telephone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入联系方式"/>
+
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_line5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:text="确认"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:background="@drawable/button_bg"/>
+
+    <Button
+        android:id="@+id/add_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:text="取消"
+        android:textSize="20sp"
+        android:background="@drawable/button_bg"/>
+
+</RelativeLayout>

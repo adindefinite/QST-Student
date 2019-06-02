@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context="${relativePackage}.${activityClass}" >
+
+   <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/welcome"
+        android:textSize="20sp" />
+   
+   <ImageView
+       android:id="@+id/imageview"
+       android:layout_marginTop="80dp"
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:background="@drawable/photo_girl" 
+       android:layout_below="@id/textView1"
+       android:layout_centerHorizontal="true"
+       />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/studentNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/studentNo_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:hint="@string/accounthint"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textSize="20sp" >
+             <requestFocus />
+            </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linearLayout1" >
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/passwordhint"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:textSize="20sp" >
+        </EditText>
+        
+        <Switch
+            android:id="@+id/switch_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:textOn=" "
+            android:textOff=" "
+            android:switchMinWidth="15dp"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track"/>
+
+    </LinearLayout>
+    
+    <CheckBox
+        android:id="@+id/save_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linearLayout2"
+        android:text="记住密码"
+        android:textColor="#000000"/>
+    
+    <Button
+        android:id="@+id/forget_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout2"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:text="忘记密码"
+        android:textColor="#000000"
+        android:background="#00000000"/>
+    
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forget_pw"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/login"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:background="@drawable/button_bg"/>
+
+    <Button
+        android:id="@+id/login_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cancel"
+        android:textSize="13sp"
+        android:background="@drawable/button_bg"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resgiter"
+        android:layout_centerHorizontal="true"
+        android:text="@string/a"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/resgiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b"
+        android:textSize="15sp"
+        android:textColor="@color/mediumaquamarine"
+        android:background="#00000000"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

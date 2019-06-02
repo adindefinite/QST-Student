@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tab4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/student"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/personal_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/powderblue"
+        android:text="个人信息" />
+
+    <LinearLayout
+        android:id="@+id/li1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_student" >
+
+        <LinearLayout
+            android:id="@+id/li2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/personal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="姓名" />
+
+            <TextView
+                android:id="@+id/personal_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="班级" />
+
+            <TextView
+                android:id="@+id/personal_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="联系方式" />
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/add_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/button_bg"
+            android:text="完善个人信息"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/personal_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/li1"
+        android:layout_marginTop="10dp"
+        android:background="@color/powderblue"
+        android:text="考试成绩" />
+    
+    <LinearLayout
+        android:id="@+id/tab4_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/personal_score"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tab4_name"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="姓名" />
+
+        <TextView
+            android:id="@+id/tab4_course"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="课程" />
+
+        <TextView
+            android:id="@+id/tab4_score"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="分数" />
+        <TextView
+            android:id="@+id/tab4_rank"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="排名" />
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/listView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tab4_line" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listView3"
+        android:layout_marginTop="10dp"
+        android:background="@color/powderblue"
+        android:text="操作" />
+
+    <LinearLayout
+        android:id="@+id/li3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operation"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/change_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="修改个人信息"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/change_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="修改密码"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="退出登录"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>
