@@ -23,7 +23,7 @@ public class MostServlet extends HttpServlet {
 		String method = request.getParameter("method_m") == null ? "" : request.getParameter("method_m");
 		System.out.println("most=" + method);
 		switch (method) {
-		case "top":// 显示最好的五名
+		case "top"://显示最好的五名
 			Top(request, response);
 			return;
 		case "low":// 显示最差的五名

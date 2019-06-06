@@ -74,10 +74,10 @@ public class RegisterActivity extends Activity {
 				Log.d("Login",studentno+","+password);
 				if (studentno.equals("")) {//无姓名
 					if(password.equals("")) {//无密码
-						Toast.makeText(getApplicationContext(), "请输入用户名和密码！", Toast.LENGTH_SHORT).show();
+						Toast.makeText(getApplicationContext(), "请输入账号和密码！", Toast.LENGTH_SHORT).show();
 						return;
 					}else {//无姓名有密码
-						Toast.makeText(getApplicationContext(), "请输入用户名！", Toast.LENGTH_SHORT).show();
+						Toast.makeText(getApplicationContext(), "请输入账号！", Toast.LENGTH_SHORT).show();
 						return;
 					}
 				} else if(password.equals("")) {//有姓名无密码
@@ -116,6 +116,16 @@ public class RegisterActivity extends Activity {
                     					}
                     				}
                     			}
+                    			
+                    			/**
+        						 * 连接服务器失败的处理方法
+        						 */
+        						@Override
+        						public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+        							super.onFailure(statusCode, headers, throwable, errorResponse);
+        							Log.d("Register---servlet", "---->>onFailure" + throwable.toString());
+        							Toast.makeText(RegisterActivity.this, "请检查服务端口！", Toast.LENGTH_SHORT).show();
+        						}
                     		});
                     		Log.d("fffffff",f+"");
                         }else{//如果验证码输入错误

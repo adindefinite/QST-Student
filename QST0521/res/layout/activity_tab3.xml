@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:layout_marginTop="10dp"
-        android:text="最好的五名学生情况"
+        android:text="最好的五名和最差的五名学生情况"
         android:background="@color/powderblue"
         android:layout_below="@id/tableLayout1"
         />
@@ -88,7 +88,7 @@
         android:showDividers="beginning|middle|end" >
       </TableLayout>
       
-      <TextView 
+      <!-- <TextView 
         android:id="@+id/show_low_info"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -96,14 +96,14 @@
         android:text="最差的五名学生情况"
         android:background="@color/powderblue"
         android:layout_below="@id/tableLayout2"
-        />
+        /> -->
       
       <TableLayout
         android:id="@+id/tableLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/show_low_info"
+        android:layout_below="@id/tableLayout2"
         android:orientation="vertical"
         android:divider="@drawable/divider"
         android:showDividers="beginning|middle|end" >

@@ -15,7 +15,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/app_icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -24,11 +24,11 @@
         </activity>
         <activity
             android:name=".HomeActivity"
-            android:label="@string/title_activity_home" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login" >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,35 +37,35 @@
         </activity>
         <activity
             android:name=".Tab1Activity"
-            android:label="@string/title_activity_tab1" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".Tab2Activity"
-            android:label="@string/title_activity_tab2" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".Tab3Activity"
-            android:label="@string/title_activity_tab3" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".Tab4Activity"
-            android:label="@string/title_activity_tab4" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".ForgetPwdActivity"
-            android:label="@string/title_activity_forget_pwd" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".RegisterActivity"
-            android:label="@string/title_activity_register" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".AddInfoActivity"
-            android:label="@string/title_activity_add_info" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".ChangePwdActivity"
-            android:label="@string/title_activity_change_pwd" >
+            android:label="@string/app_name" >
         </activity>
     </application>
 
